@@ -17,9 +17,10 @@ function getDigit(num){
 }
 //doCalculation
 function doCalculation(){
-    const stringArray=getInput('digit').innerText.replace(/[^-()\d/*+.]/g, '');
+    const stringArray=getInput('digit').innerText;
     
-    return eval(stringArray)
+    //return eval(stringArray)
+    return (new Function('return '+stringArray)())
 
 }
     
