@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"/>
+      <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="w-2/4 mx-auto mt-5">
+        <h1 class="text-center font-bold text-4xl text-blue-600">Online Calculator</h1>
+        <div class="h-1 bg-green-600 mt-2"></div>
+    </header>
+    <main class="w-2/4 mx-auto  bg-[#1e1c1f] p-5 mt-5">
+        <section class=" mb-4">
+            <div id="screen" class="bg-[#a2af77] h-30 rounded-xl text-right p-3">
+              <p  id="digit"class="text-5xl">0</p>
+              <p  id="result"class="text-5xl">0</p>
+            </div>
+
+        </section>
+        <section class="keys">
+            <div id="key-pad" class="grid grid-cols-4 gap-2">
+                <div id="mc" class="text-5xl text-white text-white font-bold bg-[#110d0f] p-3 text-center cursor-pointer">
+                  MC
+                </div>
+                <div id="m-plus" class="text-5xl text-white text-white font-bold bg-[#110d0f] p-3 text-center cursor-pointer">
+                    M+
+                </div>
+                <div id="devide" class="text-5xl text-white text-white font-bold bg-[#110d0f] p-3 text-center cursor-pointer">
+                    /
+                </div>
+                <div id="cross" class="text-5xl text-white text-white font-bold bg-[#110d0f] p-3 text-center cursor-pointer">
+                    *
+                </div>
+                <div id="seven" class="text-5xl text-white text-white font-bold bg-[#58595b] p-3 text-center cursor-pointer">
+                    7
+                </div>
+                <div id="eight" class="text-5xl text-white text-white font-bold bg-[#58595b] p-3 text-center cursor-pointer">
+                    8
+                </div>
+                <div id="nine" class="text-5xl text-white text-white font-bold bg-[#58595b] p-3 text-center cursor-pointer">
+                    9
+                </div>
+                <div id="minus" class="text-5xl text-white text-white font-bold bg-[#58595b] p-3 text-center cursor-pointer">
+                    -
+                </div>
+                <div id="four" class="text-5xl text-white text-white font-bold bg-[#58595b] p-3 text-center cursor-pointer">
+                    4
+                </div>
+                <div id="five" class="text-5xl text-white text-white font-bold bg-[#58595b] p-3 text-center cursor-pointer">
+                    5
+                </div>
+                <div id="six" class="text-5xl text-white text-white font-bold bg-[#58595b] p-3 text-center cursor-pointer">
+                    6
+                </div>
+                <div id="plus" class="text-5xl text-white text-white font-bold bg-[#58595b] p-3 text-center cursor-pointer">
+                    +
+                </div>
+                <div id="one" class="text-5xl text-white text-white font-bold bg-[#58595b] p-3 text-center cursor-pointer">
+                    1
+                </div>
+                <div id="two" class="text-5xl text-white text-white font-bold bg-[#58595b] p-3 text-center cursor-pointer">
+                    2
+                </div>
+                <div id="three" class="text-5xl text-white text-white font-bold bg-[#58595b] p-3 text-center cursor-pointer">
+                    3
+                </div>
+                <div id="equal" class="text-5xl text-white text-white font-bold bg-[#f15a2a] p-3 flex items-center justify-center row-span-2 cursor-pointer">
+                    =
+                </div>
+                <div id="zero" class="text-5xl text-white text-white font-bold bg-[#58595b] p-3 text-center col-span-2 cursor-pointer">
+                    0 
+                </div>
+                <div id="dot" class="text-5xl text-white text-white font-bold bg-[#58595b] p-3 flex items-center justify-center cursor-pointer">
+                    .
+                </div>    
+            </div>
+        </section>
+    </main>
+   
+    <!-- js file -->
+    <script src="index.js"></script>
+</body>
+</html>
